@@ -32,7 +32,7 @@ def post_test():
         # Sine value for example.
         curr_x = float(i / 10)
         x.append(curr_x)
-        y.append(math.sin(curr_x))
+        y.append(math.sin(curr_x) * value)
     
     return json.dumps({ 'x': x, 'y': y })
 

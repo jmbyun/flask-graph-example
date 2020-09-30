@@ -23,5 +23,7 @@ flask run
 
 ## Check out these documents
 
-- Flask: https://flask.palletsprojects.com/en/1.1.x/quickstart/
-
+- Web framework: Flask 
+    - https://flask.palletsprojects.com/en/1.1.x/quickstart/
+- JavaScript Chart: D3.js
+    - https://www.d3-graph-gallery.com/graph/line_basic.html
