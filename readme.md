@@ -16,9 +16,22 @@ pip install -r requirements.txt
 
 ## How to run
 
+Activate **venv**.
+
 ```bash
-export FLASK_APP=app.py
-flask run
+source ./env/bin/activate
+```
+
+or in Windows:
+
+```cmd
+\env\Scripts\activate.bat
+```
+
+And then, run server.
+
+```bash
+python app.py
 ```
 
 ## Check out these documents
