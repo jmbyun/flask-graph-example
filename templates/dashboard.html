@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="form">
+    This is an example form.<br>
+    <label>Value</label>
+    <input type="text" id="value-input"/>
+    <button onclick="sendValue()">Send</button>
+</div>
+<script>
+    function sendValue() {
+        const value = document.getElementById('value-input').value;
+        axios.post('/post_test', {
+            value: value,
+        }).then(response => {
+            const data = response.data;
+
+            console.log(data);
+        }).catch(function (error) {
+            alert('Error occurred on submit: ' + error);
+        });
+    }
+</script>
+{% endblock %}
